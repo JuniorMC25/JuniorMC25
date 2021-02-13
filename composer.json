@@ -1,5 +1,12 @@
 {
-    "name": "mp-ecommerce-php",
-    "type": "project",
-    "require": {}
+    "name": "junio/junior-mc25",
+    "authors": [
+        {
+            "name": "JuniorMC25",
+            "email": "junior_sagitario_97@hotmail.es"
+        }
+    ],
+    "require": {
+        "mercadopago/dx-php": "^2.2"
+    }
 }

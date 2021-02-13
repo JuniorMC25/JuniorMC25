@@ -123,14 +123,20 @@
 
                                             </h3>
                                         </div>
-                                        <h3 >
+                                        <h3>
                                             <?php echo $_POST['price'] ?>
                                         </h3>
                                         <h3 >
                                             <?php echo "$" . $_POST['unit'] ?>
                                         </h3>
                                     </div>
+                                    <form action="./pagar.php">
+                                        <input type="hidden" name="img" value="<?=$_POST['img']?>">
+                                        <input type="hidden" name="title" value="<?=$_POST['title']?>">
+                                        <input type="hidden" name="price" value="<?=$_POST['price']?>">
+                                        <input type="hidden" name="unit" value="<?=$_POST['unit']?>"> 
                                     <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
